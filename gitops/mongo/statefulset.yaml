@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: mongo
-  namespace: proj1-gitops
+  namespace: todo-app
 spec:
   serviceName: mongo
   replicas: 1

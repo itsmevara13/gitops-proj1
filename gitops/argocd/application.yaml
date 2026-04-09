@@ -6,15 +6,15 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/itsmevara13/gitops-proj1
+    repoURL: https://github.com/YOUR_USERNAME/todo-gitops
     targetRevision: HEAD
-    path: .                          # watch the whole repo root
+    path: .
   destination:
     server: https://kubernetes.default.svc
-    namespace: proj1-gitops
+    namespace: todo-app
   syncPolicy:
     automated:
-      prune: true                    # delete resources removed from Git
-      selfHeal: true                 # revert manual kubectl changes
+      prune: true
+      selfHeal: true
     syncOptions:
       - CreateNamespace=true
